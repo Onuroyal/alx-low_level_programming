@@ -2,14 +2,14 @@
 
 /**
 * main - prints Buzz each numbers of 3 and 5.
- Return: Always 0.
+* Return: Always 0.
 */
 
 int main(void)
 {
 int i;
 
-	i = 1;
+i = 1;
 printf("%d", i);
 
 i = 2;
