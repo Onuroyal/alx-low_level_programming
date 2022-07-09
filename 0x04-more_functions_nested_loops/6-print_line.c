@@ -1,27 +1,19 @@
 #include "main.h"
 
 /**
-* print_line - prints straight line n times.
-* @n: times straight line is printed.
-* Return: no return.
+* print_line - check for a digit
+* @n : number of _ to be printed
+* Return: void.
 */
 
 void print_line(int n)
 {
-int i;
+int i = 0;
 
-if (n < 0)
-{
-_putchar('\n')
-}
-else
-{
-i = 0;
-while (i < n)
+while (i < n && n > 0)
 {
 _putchar('_');
 i++;
 }
 _putchar('\n');
-}
 }
