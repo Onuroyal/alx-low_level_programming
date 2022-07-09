@@ -23,12 +23,12 @@ alpha_lower = 'a';
 while (alpha_lower <= 'z')
 {
 if (c == alpha_upper || c == alpha_lower
-{
+
 bool = 1;
-}
+
 alpha_lower++;
-}
 alpha_upper++;
 }
 return (bool);
+}
 }
