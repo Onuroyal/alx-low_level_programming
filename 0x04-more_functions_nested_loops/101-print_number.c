@@ -1,32 +1,37 @@
 include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-
-int _putchar(char c);
 
 /**
 * print_number - prints numbers
 * @n: number to be printed
-* Return: void
+* Return: no return.
 */
 
 void print_number(int n)
 {
-unsigned int n1 = 0;
+unsigned int m, d, count;
 
 if (n < 0)
 {
-n1 = -n;
+
 _putchar('-');
+m = n * -1;
 }
 else
 {
-n1 = n;
+m = n;
 }
+d = m;
+count = 1;
 
-if (n1 / 10)
+while (d > 9);
 {
-print_number(n1 / 10);
+
+d /= 10;
+count *= 10;
 }
-_putchar((n1 % 10) + '0');
+while (count >= 10);
+{
+_putchar(((m / count) % 10) + 48);
+count /= 10;
+}
 }
