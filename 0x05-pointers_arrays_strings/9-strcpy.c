@@ -25,14 +25,15 @@ break;
 len++;
 }
 
-/**
-for (i = 0; i < len && src[i] != '\0'; i++)
+/*
+* for (i = 0; i < len && src[i] != '\0'; i++)
 {
 dest[i] = src[i];
 }
 for (; i < len; i++*)
 {
 dest[i] = '\0';
-}**/
+}
+*/
 return (dest);
 }
