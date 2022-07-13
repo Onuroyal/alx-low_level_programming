@@ -9,8 +9,13 @@
 int _strlen(char *s)
 
 {
-int i;
-for (i = 0; s[i] != '\0'; i++);
-return (i);
+int counter;
+counter = 0;
+while (*(s + counter) != '\0')
+{
+/**printf("%c",*(s + counter));**/
 
+counter++;
+}
+return (counter);
 }
