@@ -38,10 +38,8 @@ return (array);
 /**
 * array = (char *)malloc(sizeof(char) * size);
 *  if (array != NULL)
-{
 *  while (size > 0)
 *  array[--size] = c;
-}
 *  return (array);
 */
 }
