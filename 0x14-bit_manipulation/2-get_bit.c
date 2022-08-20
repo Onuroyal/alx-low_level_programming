@@ -1,29 +1,29 @@
 #include "main.h"
+
+
 /**
  * get_bit - get the bit at a given index
  * @nd: number to check
- * @index: index to check 
- * Return; bit value or -1;
+ * @index: index to check
+ * Return: bit value or -1;
  */
 
 int get_bit(unsigned long int n, unsigned int index)
 
+
 {
 
-	unsigned long int i = 1, len = 0;
+	unsigned long int divisor, check;
 
-	while (len++ < index)
+	if (index > (sizeof(unsigned long int) * 8 - 1))
 
-	{
+		return (-1);
+	divisor = 1 << index;
+	check = n & divisor;
+	if (check == divisor)
 
-		if (len >= MAX_COUNT)
+		return (1);
 
-			return (-1);
-
-		i = i << 1;
-
-	}
-
-	return (n & i ? 1 : 0);
+	return (0);
 
 }
