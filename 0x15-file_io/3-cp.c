@@ -10,7 +10,6 @@
 int main(int argc, char *argv[])
 
 {
-
 	int fd_r, fd_w, x, m, n;
 	char buf[BUFSIZ];
 
@@ -28,7 +27,6 @@ int main(int argc, char *argv[])
 	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while ((x = read(fd_r, buf, BUFSIZ)) > 0)
 	{
-
 		if (fd_w < 0 || write(fd_w, buf, x) != x)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
@@ -51,5 +49,5 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
 		exit(100);
 	}
-	return (0);
+return (0);
 }
